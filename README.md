@@ -1,7 +1,7 @@
 Link-in-bio for Blake Miller
 =========================
 
-https://link.blakemiller.ca
+https://links.blakemiller.ca
 
 
 
