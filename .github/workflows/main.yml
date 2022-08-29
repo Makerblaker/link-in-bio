@@ -13,6 +13,12 @@ jobs:
   deployment:
     runs-on: self-hosted
     steps:
-      - uses: AutoModality/action-clean@v1
       - name: Copy files to Production location
         run: sudo cp -r ${GITHUB_WORKSPACE} /var/www/links.blakemiller.ca
+      - name: 'Cleanup build folder'
+        run: |
+          ls -la ./
+          rm -rf ./* || true
+          rm -rf ./.??* || true
+          ls -la ./    
+      - uses: actions/checkout@v2
