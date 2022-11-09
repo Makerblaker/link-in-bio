@@ -21,4 +21,3 @@ jobs:
           rm -rf ./* || true
           rm -rf ./.??* || true
           ls -la ./    
-      - uses: actions/checkout@v2
