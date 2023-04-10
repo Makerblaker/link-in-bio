@@ -17,9 +17,3 @@ jobs:
         run: sudo rm -r /var/www/links.blakemiller.ca/
       - name: Copy files to Production location
         run: sudo cp -r ${GITHUB_WORKSPACE} /var/www/links.blakemiller.ca
-      - name: 'Cleanup build folder'
-        run: |
-          ls -la ./
-          rm -rf ./* || true
-          rm -rf ./.??* || true
-          ls -la ./    
