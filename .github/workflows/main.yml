@@ -13,5 +13,7 @@ jobs:
   deployment:
     runs-on: self-hosted
     steps:
+      - name: test
+        run: ls ${GITHUB_WORKSPACE}
       - name: Copy files to Production location
         run: sudo cp -r ${GITHUB_WORKSPACE} /var/www/links.blakemiller.ca
