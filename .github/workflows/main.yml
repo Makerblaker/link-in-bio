@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Deleted current site
-        run: rm -r /var/www/links.blakemiller.ca/*
+        run: sudo rm -r /var/www/links.blakemiller.ca/*
       - name: Copy files to Production location
         run: cp -r ${GITHUB_WORKSPACE} /var/www/links.blakemiller.ca
       - name: 'Cleanup build folder'
